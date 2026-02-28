@@ -2,15 +2,16 @@
 title: Zoe Blog
 description: GitHub 商机挖掘系统 - 自动发现高价值项目并生成分析报告
 baseurl: ""
-url: "https://qqqzhch.github.io/zoe-blog-jekyll"
+url: "https://qqqzhzh.github.io/zoe-blog-jekyll"
 lang: zh-CN
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: pages-themes/cayman@v0.2.0
 
 # 插件
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
 
