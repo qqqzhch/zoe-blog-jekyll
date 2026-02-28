@@ -9,8 +9,8 @@ layout: default
 ## 最新文章
 
 {% for post in site.posts limit: 5 %}
-### [{{ post.title }}]({{ post.url }})
-<small>{{ post.date | date: "%Y-%m-%d" }}</small>
+### [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
+<small>{{ post.date | date: "%Y年%m月%d日" }}</small>
 
 {{ post.excerpt | strip_html | truncate: 200 }}
 
@@ -30,5 +30,5 @@ layout: default
 
 ### 仓库
 
-- [Zoe Blog](https://github.com/qqqzhch/zoe-blog)
+- [Zoe Blog](https://github.com/qqqzhch/zoe-blog-jekyll)
 - [Zoe Landing Pages](https://github.com/qqqzhch/zoe-landing-pages)
