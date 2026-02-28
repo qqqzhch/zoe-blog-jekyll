@@ -1,6 +1,6 @@
 # 站点配置
-title: Zoe Blog
-description: GitHub 商机挖掘系统 - 自动发现高价值项目并生成分析报告
+title: GitHub 商机洞察
+description: 自动发现高价值项目并生成商业分析与产品设计报告
 baseurl: ""
 url: "https://qqqzhch.github.io/zoe-blog-jekyll"
 lang: zh-CN
