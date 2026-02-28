@@ -1,13 +1,13 @@
 # 站点配置
 title: Zoe Blog
 description: GitHub 商机挖掘系统 - 自动发现高价值项目并生成分析报告
-baseurl: "/zoe-blog"
+baseurl: "/zoe-blog-jekyll"
 url: "https://qqqzhch.github.io"
 lang: zh-CN
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: cayman
 
 # 插件
 plugins:
