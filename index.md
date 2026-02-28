@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
 ## 最新文章
