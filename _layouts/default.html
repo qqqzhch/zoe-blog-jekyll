@@ -151,15 +151,13 @@
   <main>
     {% if page.title %}
     <article>
-      <h2>{{ page.title }}</h2>
-      
       <div class="post-meta">
         发布日期：{{ page.date | date: "%Y年%m月%d日" }}
         {% if page.categories %}
         | 分类：{{ page.categories | join: ", " }}
         {% endif %}
       </div>
-      
+
       {{ content }}
     </article>
     {% else %}
