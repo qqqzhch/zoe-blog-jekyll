@@ -20,8 +20,17 @@ jobs:
     - name: Setup Pages
       uses: actions/configure-pages@v5
       
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2'
+        bundler-cache: true
+        cache-version: 0  # 强制刷新缓存
+      
     - name: Build with Jekyll
-      uses: actions/jekyll-build-pages@v5
+      run: |
+        gem install jekyll
+        jekyll build
       
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
