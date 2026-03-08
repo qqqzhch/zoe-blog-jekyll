@@ -27,10 +27,13 @@ jobs:
         bundler-cache: true
         cache-version: 0  # 强制刷新缓存
       
-    - name: Build with Jekyll
+    - name: Install dependencies
       run: |
-        gem install jekyll
-        jekyll build
+        gem install jekyll bundler
+        bundler install
+      
+    - name: Build with Jekyll
+      run: bundler exec jekyll build
       
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
