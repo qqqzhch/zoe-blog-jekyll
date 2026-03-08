@@ -8,6 +8,7 @@ on:
 permissions:
   contents: read
   pages: write
+  id-token: write  # Required for Pages deployment
 
 jobs:
   build-and-deploy:
@@ -29,7 +30,7 @@ jobs:
       
     - name: Install dependencies
       run: |
-        gem install jekyll bundler
+        gem gem install jekyll bundler
         bundler install
       
     - name: Build with Jekyll
