@@ -13,10 +13,14 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      id: deployment
       
     - name: Setup Pages
       uses: actions/configure-pages@v5
@@ -43,6 +47,3 @@ jobs:
         
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v4
-      environment:
-        name: github-pages
-        url: ${{ steps.deployment.outputs.page_url }}
