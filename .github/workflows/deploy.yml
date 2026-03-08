@@ -30,7 +30,7 @@ jobs:
       
     - name: Install dependencies
       run: |
-        gem gem install jekyll bundler
+        gem install jekyll bundler
         bundler install
       
     - name: Build with Jekyll
